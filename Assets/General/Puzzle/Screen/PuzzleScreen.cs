@@ -30,6 +30,8 @@ namespace Game
         public Button confirm;
         public Button tutorial;
 
+        public Button close;
+
         Puzzle puzzle;
 
         Animator animator;
@@ -42,6 +44,8 @@ namespace Game
         {
             confirm.onClick.AddListener(ConfirmClick);
             tutorial.onClick.AddListener(TutorialClick);
+
+            close.onClick.AddListener(Close);
 
             solution.contentType = InputField.ContentType.IntegerNumber;
             solution.onValueChanged.AddListener(OnSolutionChanged);
@@ -106,9 +110,15 @@ namespace Game
 
         public void Complete()
         {
+            puzzle.Solve();
+
+            Close();
+        }
+
+        void Close()
+        {
             gameObject.SetActive(false);
 
-            puzzle.Solve();
             puzzle = null;
         }
     }

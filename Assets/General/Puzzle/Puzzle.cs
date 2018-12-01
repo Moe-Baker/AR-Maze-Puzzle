@@ -68,10 +68,10 @@ namespace Game
         {
             button = GetComponent<Button>();
 
-            button.onClick.AddListener(ClickAction);
+            button.onClick.AddListener(Click);
         }
 
-        void ClickAction()
+        void Click()
         {
             Level.Instance.puzzleScreen.Show(this);
         }
