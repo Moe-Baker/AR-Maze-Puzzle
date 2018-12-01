@@ -30,10 +30,14 @@ namespace Game
             {
                 return solved;
             }
-            set
-            {
-                solved = value;
-            }
+        }
+
+        public event Action OnSolved;
+        public void Solve()
+        {
+            solved = true;
+
+            if (OnSolved != null) OnSolved();
         }
 
         public int number1 = 1;

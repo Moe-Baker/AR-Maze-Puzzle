@@ -44,6 +44,7 @@ namespace Game
             tutorial.onClick.AddListener(TutorialClick);
 
             solution.contentType = InputField.ContentType.IntegerNumber;
+            solution.onValueChanged.AddListener(OnSolutionChanged);
 
             animator = GetComponent<Animator>();
 
@@ -59,14 +60,27 @@ namespace Game
             number1.text = puzzle.number1.ToString();
             number2.text = puzzle.number2.ToString();
 
+            solution.text = "";
+            confirm.interactable = false;
+
             tutorial.gameObject.SetActive(false);
+        }
+
+        void Update()
+        {
+#if UNITY_EDITOR
+            if (Input.GetKeyDown(KeyCode.S))
+                Complete();
+#endif
         }
 
         void ConfirmClick()
         {
+            if (solution.text.Length == 0) return;
+
             var answer = int.Parse(solution.text);
 
-            if(answer == puzzle.Solution)
+            if (answer == puzzle.Solution)
             {
                 animator.SetTrigger("Correct");
                 audioSource.PlayOneShot(correctSFX);
@@ -75,6 +89,8 @@ namespace Game
             {
                 animator.SetTrigger("Wrong");
                 audioSource.PlayOneShot(wrongSFX);
+
+                tutorial.gameObject.SetActive(true);
             }
         }
 
@@ -83,11 +99,16 @@ namespace Game
 
         }
 
+        void OnSolutionChanged(string text)
+        {
+            confirm.interactable = text.Length > 0;
+        }
+
         public void Complete()
         {
             gameObject.SetActive(false);
 
-            puzzle.Solved = true;
+            puzzle.Solve();
             puzzle = null;
         }
     }

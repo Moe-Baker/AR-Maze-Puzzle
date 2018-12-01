@@ -19,18 +19,19 @@ using Random = UnityEngine.Random;
 
 namespace Game
 {
-    [DefaultExecutionOrder(ExecutionOrder)]
-	public class Level : MonoBehaviour
+    [RequireComponent(typeof(Puzzle))]
+	public class PuzzlePoints : MonoBehaviour
 	{
-        public const int ExecutionOrder = -200;
+        public int value;
 
-        public static Level Instance { get; protected set; }
-
-        public PuzzleScreen puzzleScreen;
-
-        void Awake()
+        void Start()
         {
-            Instance = this;
+            GetComponent<Puzzle>().OnSolved += OnSolved;
         }
-	}
+
+        void OnSolved()
+        {
+            
+        }
+    }
 }
