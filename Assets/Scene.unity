@@ -129,6 +129,7 @@ GameObject:
   - component: {fileID: 148885}
   - component: {fileID: 148891}
   - component: {fileID: 148892}
+  - component: {fileID: 148893}
   m_Layer: 0
   m_Name: Puzzle
   m_TagString: Untagged
@@ -230,7 +231,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 148889}
   m_OnClick:
     m_PersistentCalls:
@@ -295,6 +296,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 10
+--- !u!114 &148893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 148883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3015f557593331e4d994dbaf7ff5274d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 521291253}
 --- !u!1 &5404670
 GameObject:
   m_ObjectHideFlags: 0
@@ -660,7 +673,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 81226654}
   m_OnClick:
     m_PersistentCalls:
@@ -1901,6 +1914,7 @@ GameObject:
   - component: {fileID: 423953004}
   - component: {fileID: 423953010}
   - component: {fileID: 423953011}
+  - component: {fileID: 423953012}
   m_Layer: 0
   m_Name: Puzzle
   m_TagString: Untagged
@@ -2002,7 +2016,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 423953008}
   m_OnClick:
     m_PersistentCalls:
@@ -2067,6 +2081,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 10
+--- !u!114 &423953012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 423953002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3015f557593331e4d994dbaf7ff5274d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1156283536}
 --- !u!1 &448383968
 GameObject:
   m_ObjectHideFlags: 0
@@ -2152,6 +2178,7 @@ GameObject:
   - component: {fileID: 467576184}
   - component: {fileID: 467576185}
   - component: {fileID: 467576186}
+  - component: {fileID: 467576187}
   m_Layer: 0
   m_Name: Puzzle
   m_TagString: Untagged
@@ -2211,7 +2238,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 467576180}
   m_OnClick:
     m_PersistentCalls:
@@ -2318,6 +2345,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 10
+--- !u!114 &467576187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 467576177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3015f557593331e4d994dbaf7ff5274d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 148885}
 --- !u!1 &495603905
 GameObject:
   m_ObjectHideFlags: 0
@@ -2472,6 +2511,7 @@ GameObject:
   - component: {fileID: 521291253}
   - component: {fileID: 521291259}
   - component: {fileID: 521291260}
+  - component: {fileID: 521291261}
   m_Layer: 0
   m_Name: Puzzle
   m_TagString: Untagged
@@ -2573,7 +2613,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 521291257}
   m_OnClick:
     m_PersistentCalls:
@@ -2638,6 +2678,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 10
+--- !u!114 &521291261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 521291251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3015f557593331e4d994dbaf7ff5274d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 547774934}
 --- !u!1 &539544841
 GameObject:
   m_ObjectHideFlags: 0
@@ -2695,6 +2747,7 @@ GameObject:
   - component: {fileID: 547774934}
   - component: {fileID: 547774940}
   - component: {fileID: 547774941}
+  - component: {fileID: 547774942}
   m_Layer: 0
   m_Name: Puzzle
   m_TagString: Untagged
@@ -2796,7 +2849,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 547774938}
   m_OnClick:
     m_PersistentCalls:
@@ -2861,6 +2914,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 10
+--- !u!114 &547774942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 547774932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3015f557593331e4d994dbaf7ff5274d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1108567565}
 --- !u!1 &549060865
 GameObject:
   m_ObjectHideFlags: 0
@@ -4509,6 +4574,7 @@ GameObject:
   - component: {fileID: 1108567565}
   - component: {fileID: 1108567571}
   - component: {fileID: 1108567572}
+  - component: {fileID: 1108567573}
   m_Layer: 0
   m_Name: Puzzle
   m_TagString: Untagged
@@ -4610,7 +4676,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1108567569}
   m_OnClick:
     m_PersistentCalls:
@@ -4675,6 +4741,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 10
+--- !u!114 &1108567573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1108567563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3015f557593331e4d994dbaf7ff5274d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 423953004}
 --- !u!1 &1127844673
 GameObject:
   m_ObjectHideFlags: 0
@@ -4780,6 +4858,7 @@ GameObject:
   - component: {fileID: 1156283536}
   - component: {fileID: 1156283542}
   - component: {fileID: 1156283543}
+  - component: {fileID: 1156283544}
   m_Layer: 0
   m_Name: Puzzle
   m_TagString: Untagged
@@ -4881,7 +4960,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1156283540}
   m_OnClick:
     m_PersistentCalls:
@@ -4946,6 +5025,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 10
+--- !u!114 &1156283544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1156283534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3015f557593331e4d994dbaf7ff5274d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1782258531}
 --- !u!1 &1174620556
 GameObject:
   m_ObjectHideFlags: 0
@@ -6508,6 +6599,7 @@ GameObject:
   - component: {fileID: 1782258531}
   - component: {fileID: 1782258537}
   - component: {fileID: 1782258538}
+  - component: {fileID: 1782258539}
   m_Layer: 0
   m_Name: Puzzle
   m_TagString: Untagged
@@ -6609,7 +6701,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1782258535}
   m_OnClick:
     m_PersistentCalls:
@@ -6674,6 +6766,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 10
+--- !u!114 &1782258539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1782258529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3015f557593331e4d994dbaf7ff5274d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1969828947}
 --- !u!1 &1810636412
 GameObject:
   m_ObjectHideFlags: 0
@@ -6998,6 +7102,7 @@ GameObject:
   - component: {fileID: 1969828947}
   - component: {fileID: 1969828953}
   - component: {fileID: 1969828954}
+  - component: {fileID: 1969828955}
   m_Layer: 0
   m_Name: Puzzle
   m_TagString: Untagged
@@ -7099,7 +7204,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1969828951}
   m_OnClick:
     m_PersistentCalls:
@@ -7164,6 +7269,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 10
+--- !u!114 &1969828955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1969828945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3015f557593331e4d994dbaf7ff5274d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 81226650}
 --- !u!1 &2006573467
 GameObject:
   m_ObjectHideFlags: 0

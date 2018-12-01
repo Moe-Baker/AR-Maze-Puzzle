@@ -20,9 +20,14 @@ using Random = UnityEngine.Random;
 namespace Game
 {
     [RequireComponent(typeof(Puzzle))]
-	public class PuzzlePoints : MonoBehaviour
+	public class PuzzleUnlocker : MonoBehaviour
 	{
-        public int value;
+        public Puzzle target;
+
+        void Reset()
+        {
+            target = transform.parent.parent.GetChild(transform.parent.GetSiblingIndex() + 1).GetComponentInChildren<Puzzle>();
+        }
 
         void Start()
         {
@@ -31,7 +36,7 @@ namespace Game
 
         void OnSolved()
         {
-            Level.Instance.Points += value;
+            target.Interactable = true;
         }
     }
 }

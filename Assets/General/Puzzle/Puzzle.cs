@@ -52,6 +52,17 @@ namespace Game
         }
 
         Button button;
+        public bool Interactable
+        {
+            get
+            {
+                return button.interactable;
+            }
+            set
+            {
+                button.interactable = value;
+            }
+        }
 
         void Start()
         {
