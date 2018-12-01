@@ -20,9 +20,32 @@ using Random = UnityEngine.Random;
 namespace Game
 {
     [RequireComponent(typeof(Button))]
-	public class Lock : MonoBehaviour
+	public class Puzzle : MonoBehaviour
 	{
-        public bool open = false;
+        [SerializeField]
+        protected bool solved;
+        public bool Solved
+        {
+            get
+            {
+                return solved;
+            }
+            set
+            {
+                solved = value;
+            }
+        }
+
+        public int number1 = 1;
+        public int number2 = 1;
+
+        public int Solution
+        {
+            get
+            {
+                return number1 + number2;
+            }
+        }
 
         Button button;
 
@@ -35,7 +58,7 @@ namespace Game
 
         void ClickAction()
         {
-
+            Level.Instance.puzzleScreen.Show(this);
         }
 	}
 }
