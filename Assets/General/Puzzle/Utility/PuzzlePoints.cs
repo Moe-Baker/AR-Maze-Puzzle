@@ -32,6 +32,8 @@ namespace Game
         void OnSolved()
         {
             Level.Instance.Points += value;
+
+            GetComponent<Puzzle>().OnSolved -= OnSolved;
         }
     }
 }

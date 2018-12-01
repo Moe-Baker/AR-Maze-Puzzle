@@ -24,11 +24,6 @@ namespace Game
 	{
         public Puzzle target;
 
-        void Reset()
-        {
-            target = transform.parent.parent.GetChild(transform.parent.GetSiblingIndex() + 1).GetComponentInChildren<Puzzle>();
-        }
-
         void Start()
         {
             GetComponent<Puzzle>().OnSolved += OnSolved;
