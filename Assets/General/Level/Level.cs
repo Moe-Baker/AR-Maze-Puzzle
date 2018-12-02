@@ -28,6 +28,8 @@ namespace Game
 
         public PuzzleScreen puzzleScreen;
 
+        public Character Character { get; protected set; }
+
         protected int _points;
         public int Points
         {
@@ -49,6 +51,8 @@ namespace Game
         void Awake()
         {
             Instance = this;
+
+            Character = FindObjectOfType<Character>();
         }
 	}
 }
